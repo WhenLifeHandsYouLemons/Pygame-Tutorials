@@ -8,20 +8,20 @@ pygame.init()
 #This sets the size of the window.
 WIN = pygame.display.set_mode((500, 500))
 #This sets the name of the window.
-pygame.display.set_caption("First Game")
+pygame.display.set_caption("Type Program Name Here")
 
 #Have all your variables in one place to make it easier to change anything.
     ##!!TYPE ALL YOUR VARIABLES HERE!!##
-#Change the colour values for bgColor to change the colour of the background.
-bgColor = 255, 255, 255
+#Change the colour values for background_colour to change the colour of the background.
+background_colour = 255, 255, 255
 
 #This make a variable called clock which defines the speed or framerate of the program.
 clock = pygame.time.Clock()
 
 #This tells the program how the window should look.
-def gameWindowStyle():
+def game_window_style():
     #Here you can write anything to do with the design of the screen and it should update it easily.
-    WIN.fill(bgColor)
+    WIN.fill(background_colour)
     pygame.display.update()
 
 #Remember to have the RUNNING_WINDOW code near the start of every pygame program!
@@ -41,8 +41,8 @@ while RUNNING_WINDOW:
 #Write all the code for the program under here because this is what will happen when you press run till when you press the 'X'.
     ##!!REMOVE THIS TEXT AND WRITE CODE HERE!!##
 
-#This tells the program to run the def (gameWindowStyle).
-    gameWindowStyle()
+#This tells the program to run the def (game_window_style).
+    game_window_style()
 
 
 
